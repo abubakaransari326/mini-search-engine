@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Data Structures Page</title>
+</head>
+<body>
+  <h1>Data Structures in the Project</h1>
+  <p>
+    The project uses a compressed trie for index terms and an external postings store for occurrence
+    lists. The trie maps each vocabulary entry to an integer pointer, and the postings store holds
+    the actual sequences of document identifiers paired with term frequency counts.
+  </p>
+  <p>
+    Each posting can keep a document identifier and a term frequency count. Keeping postings sorted
+    by document identifier makes intersection straightforward and makes the behavior easy to predict
+    when you print intermediate lists during debugging.
+  </p>
+  <p>
+    Dictionary, list, and set structures are also useful for bookkeeping and testing. For example,
+    you might map a normalized file name to a stable document identifier, or accumulate hyperlink
+    targets before enqueueing them for the crawler.
+  </p>
+  <p>
+    Think of the trie as the fast vocabulary directory and the postings arrays as the bulk storage
+    that would live on disk in a production search engine. The separation mirrors textbook guidance
+    about memory resident dictionaries versus larger on disk inverted files.
+  </p>
+
+  <h2>Related Topics</h2>
+  <ul>
+    <li><a href="algorithms.html">Algorithms</a></li>
+    <li><a href="ranking.html">Ranking</a></li>
+    <li><a href="python-tools.html">Python Tools</a></li>
+    <li><a href="index.html">Home</a></li>
+  </ul>
+</body>
+</html>

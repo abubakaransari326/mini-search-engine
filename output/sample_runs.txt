@@ -1,0 +1,59 @@
+Query: 'crawler'
+  Matched documents: 5
+  1. crawler.html | score=4 | term_freqs=(crawler:4)
+  2. testing.html | score=3 | term_freqs=(crawler:3)
+  3. algorithms.html | score=2 | term_freqs=(crawler:2)
+  4. index.html | score=2 | term_freqs=(crawler:2)
+  5. data-structures.html | score=1 | term_freqs=(crawler:1)
+------------------------------------------------------------
+Query: 'search ranking'
+  Matched documents: 4
+  1. index.html | score=6 | term_freqs=(ranking:3, search:3)
+  2. ranking.html | score=6 | term_freqs=(ranking:5, search:1)
+  3. algorithms.html | score=5 | term_freqs=(ranking:2, search:3)
+  4. data-structures.html | score=2 | term_freqs=(ranking:1, search:1)
+------------------------------------------------------------
+Query: 'crawler crawler'
+  Matched documents: 5
+  1. crawler.html | score=4 | term_freqs=(crawler:4)
+  2. testing.html | score=3 | term_freqs=(crawler:3)
+  3. algorithms.html | score=2 | term_freqs=(crawler:2)
+  4. index.html | score=2 | term_freqs=(crawler:2)
+  5. data-structures.html | score=1 | term_freqs=(crawler:1)
+------------------------------------------------------------
+Query: 'quartzite obsidian'
+  No matching documents.
+------------------------------------------------------------
+Query: 'beautifulsoup obsidian'
+  No matching documents.
+------------------------------------------------------------
+Query: 'zephyrionxyz'
+  No matching documents.
+------------------------------------------------------------
+Query: 'python unknownterm'
+  No matching documents.
+------------------------------------------------------------
+Query: 'CRAWLER!!!'
+  Matched documents: 5
+  1. crawler.html | score=4 | term_freqs=(crawler:4)
+  2. testing.html | score=3 | term_freqs=(crawler:3)
+  3. algorithms.html | score=2 | term_freqs=(crawler:2)
+  4. index.html | score=2 | term_freqs=(crawler:2)
+  5. data-structures.html | score=1 | term_freqs=(crawler:1)
+------------------------------------------------------------
+Query: '   \t  '
+  Empty or whitespace-only query. No indexable terms.
+------------------------------------------------------------
+Query: ''
+  Empty or whitespace-only query. No indexable terms.
+------------------------------------------------------------
+Query: 'the and of'
+  No indexable terms after tokenization and stop word removal.
+------------------------------------------------------------
+Query: '@@@ ### ???'
+  No indexable terms after tokenization and stop word removal.
+------------------------------------------------------------
+Query: 'minimal vocabulary'
+  Matched documents: 1
+  1. empty-note.html | score=4 | term_freqs=(minimal:2, vocabulary:2)
+------------------------------------------------------------

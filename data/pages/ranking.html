@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ranking Page</title>
+</head>
+<body>
+  <h1>Ranking Search Results</h1>
+  <p>
+    Ranking can score a document by summing the frequencies of query terms in that document. This
+    frequency sum is easy to implement, easy to explain in a report, and behaves sensibly when one
+    document repeats a query term more often than another document does.
+  </p>
+  <p>
+    If two documents have the same score, deterministic tie breaking can use document name order.
+    Determinism matters for grading scripts, for snapshot tests, and for classroom demonstrations
+    where everyone should see identical ordering given identical input data.
+  </p>
+  <p>
+    Simple ranking is easy to explain and works well for classroom projects. More advanced systems
+    incorporate inverse document frequency, hyperlink authority, click logs, and machine learned
+    models, but those extensions are out of scope for a first inverted index exercise.
+  </p>
+  <p>
+    When writing your README, justify your ranking rule in plain language and show at least one
+    example where frequency changes the ordering. Also mention limitations, such as vulnerability to
+    term stuffing if an adversary controls page text.
+  </p>
+
+  <h2>Related Topics</h2>
+  <ul>
+    <li><a href="data-structures.html">Data Structures</a></li>
+    <li><a href="testing.html">Testing</a></li>
+    <li><a href="index.html">Home</a></li>
+  </ul>
+</body>
+</html>

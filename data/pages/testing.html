@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Testing Page</title>
+</head>
+<body>
+  <h1>Boundary Testing</h1>
+  <p>
+    Important boundary cases include empty query, unknown term, and query with only stop words. You
+    should also test whitespace only input, punctuation only input, repeated query tokens, and
+    multi keyword queries whose terms never co occur in the same document.
+  </p>
+  <p>
+    Additional tests should verify repeated terms, punctuation cleanup, and case normalization.
+    Normalization should map uppercase letters to lowercase and strip punctuation so that Crawler
+    and crawler converge to the same token in the index.
+  </p>
+  <p>
+    Testing validates correctness and makes demo output more convincing. Capture sample runs in a
+    text file so reviewers can reproduce your transcript without guessing which queries you typed
+    during the video recording.
+  </p>
+  <p>
+    Finally, test hyperlink extraction: ensure anchor tags with relative paths are discovered,
+    while mailto links and fragment only anchors are ignored or handled according to your project
+    specification. Consistent rules reduce surprises during the crawl phase.
+  </p>
+
+  <h2>Related Topics</h2>
+  <ul>
+    <li><a href="crawler.html">Web Crawler</a></li>
+    <li><a href="ranking.html">Ranking</a></li>
+    <li><a href="empty-note.html">Empty Note</a></li>
+    <li><a href="index.html">Home</a></li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Web Crawler Page</title>
+</head>
+<body>
+  <h1>Web Crawler Basics</h1>
+  <p>
+    A crawler starts from seed pages and follows hyperlinks to discover additional pages. In a real
+    deployment, politeness policies, rate limits, and robots exclusion standards matter. Here the
+    focus is the core loop: fetch, parse, extract links, enqueue unvisited targets, repeat until the
+    frontier is empty or a budget is reached.
+  </p>
+  <p>
+    For this mini site, links are local file references between HTML documents. That keeps the demo
+    deterministic and avoids network variability while still exercising real hyperlink parsing.
+  </p>
+  <p>
+    The crawler should avoid revisiting a page that was already processed. A hash set of canonical
+    document names is enough for this tiny corpus. In larger systems you normalize URLs carefully
+    to prevent duplicates that differ only by trivial syntax.
+  </p>
+  <p>
+    Crawling also interacts with indexing: once text is extracted, tokenization and stop word
+    removal feed the inverted index builder. The mineral name obsidian appears only on this page so
+    you can combine it in queries with other unique tokens to force an empty conjunction result.
+  </p>
+
+  <h2>Related Topics</h2>
+  <ul>
+    <li><a href="algorithms.html">Algorithms</a></li>
+    <li><a href="testing.html">Testing</a></li>
+    <li><a href="index.html">Home</a></li>
+  </ul>
+</body>
+</html>
